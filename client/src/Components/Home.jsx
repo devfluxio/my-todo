@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-
+import './Home.css';
 const Home = () => {
     const [todos, setTodos] = useState([]);
     console.log(todos);
@@ -19,9 +19,9 @@ const Home = () => {
     };
 
     return <div>
-        <div>
+        <div className="todo-container-1">
             {todos.map((item) => (
-                <div key={item._id} className="todo-box" >
+                <div key={item._id} className="todo-box-1" >
                     <p>{item.todo}</p>    
                 </div>
             ))}
