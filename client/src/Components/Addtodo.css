@@ -1,0 +1,91 @@
+@media(max-width:400px){
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .todo-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          /* border: 1px solid green; */
+          /* margin-inline: 10px; */
+          /* padding: 20px; */
+          width: 80%;
+          margin-top:50px ;
+          /* box-shadow:0px 0px 0.8px 0.8px grey; */
+          /* border-radius: 5px; */
+          border: none;
+
+           background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.15),
+    0 10px 20px rgba(0,0,0,0.1);
+          
+          
+    }
+    .todo-box h1{
+        margin-bottom: 0;
+        font-style: italic;
+    }
+    .todo-box textarea{
+        width: 80%;
+        height: 200px;
+        /* margin: 10px; */
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+        padding: 10px;
+
+        
+    }
+    .todo-box button{
+        width: 50%;
+        height: 40px;
+        margin-bottom: 20px;
+        background-color: teal;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}
+
+ .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .todo-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          /* border: 1px solid green; */
+          /* margin-inline: 10px; */
+          /* padding: 20px; */
+          width: 80%;
+          margin-top:50px ;
+          box-shadow:0px 0px 0.8px 0.8px grey;
+          border-radius: 5px;
+          
+          
+    }
+    .todo-box h1{
+        margin-bottom: 0;
+    }
+    .todo-box textarea{
+        width: 80%;
+        height: 200px;
+        /* margin: 10px; */
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+        padding: 10px;
+
+        
+    }
+    
