@@ -9,7 +9,8 @@ app.use(express.json());
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:5173', // allow your frontend
+  origin: ['http://localhost:5173',  'https://my-todo-site.onrender.com'],
+
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
