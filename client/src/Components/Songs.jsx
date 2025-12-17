@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import "./Songs.css";
 
-const API_BASE = import.meta.env.VITE_API_URL;
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const Songs = () => {
     const [songs, setSongs] = useState([]);
@@ -32,7 +32,7 @@ const Songs = () => {
     const fetchSongs = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${API_BASE}/getsongs`);
+            const res = await fetch(`${BASE_URL}/getsongs`);
             if (!res.ok) throw new Error("Failed to fetch songs");
             const data = await res.json();
             // map to expected shape
@@ -75,7 +75,7 @@ const Songs = () => {
                 fd.append('song', file);
                 fd.append('title', file.name);
                 console.log('Check');
-                const res = await fetch(`${API_BASE}/addsong`, { method: 'POST', body: fd });
+                const res = await fetch(`${BASE_URL}/addsong`, { method: 'POST', body: fd });
                 if (!res.ok) {
                     const txt = await res.text();
                     console.error('Upload failed:', txt);
@@ -150,7 +150,7 @@ const Songs = () => {
                         </div>
                         <audio
                             controls
-                            src={`${API_BASE}${song.path}`}
+                            src={`${BASE_URL}${song.path}`}
                             className="audio-player"
                             onPlay={() => setPlayingId(song.id)}
                             onPause={() => setPlayingId((id) => (id === song.id ? null : id))}
