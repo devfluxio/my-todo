@@ -5,6 +5,7 @@ import {BrowserRouter, Route,Routes} from 'react-router-dom';
 import Home from './Components/Home.jsx';
 import Addtodo from './Components/Addtodo.jsx';
 import Navbar from './Components/Navbar.jsx';
+import Songs from './Components/Songs.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <BrowserRouter>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
      {/* <Navbar> */}
     <Route path='/' element={<Home/>}/>
     <Route path='/addtodo' element={<Addtodo/>}/>
+    <Route path='/songs' element={<Songs/>}/>
     {/* </Navbar> */}
   </Routes>
   
